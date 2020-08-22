@@ -2,7 +2,7 @@
 
 namespace Drupal\commerce_license\Plugin\Commerce\LicenseType;
 
-use Drupal\Component\Plugin\ConfigurablePluginInterface;
+use Drupal\Component\Plugin\ConfigurableInterface;
 use Drupal\Core\Plugin\PluginFormInterface;
 use Drupal\commerce\BundlePluginInterface;
 use Drupal\commerce_license\Entity\LicenseInterface;
@@ -35,7 +35,7 @@ use Drupal\commerce_license\Entity\LicenseInterface;
  *   and revokeLicense() methods are responsible for making changes to the
  *   system, such as adding or removing a role on the license's owner.
  */
-interface LicenseTypeInterface extends BundlePluginInterface, ConfigurablePluginInterface, PluginFormInterface {
+interface LicenseTypeInterface extends BundlePluginInterface, ConfigurableInterface, PluginFormInterface {
 
   /**
    * Gets the license type label.

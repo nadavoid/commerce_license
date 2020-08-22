@@ -1,0 +1,13 @@
+diff --git a/commerce_license.info.yml b/commerce_license.info.yml
+index 82ae246..7f07f94 100644
+--- a/commerce_license.info.yml
++++ b/commerce_license.info.yml
+@@ -1,7 +1,7 @@
+ name: Commerce License
+ type: module
+ description: Provides a framework for selling access to local or remote resources.
+-core: 8.x
++core_version_requirement: ^8.8 || ^9
+ package: 'Commerce (contrib)'
+ configure: entity.commerce_license.collection
+ dependencies:
